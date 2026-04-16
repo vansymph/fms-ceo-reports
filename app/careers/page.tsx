@@ -78,9 +78,9 @@ const roles = [
 ]
 
 const steps = [
-  { step: '01', title: 'Apply', desc: 'Short intro + one example of relevant work or something you built. No cover letters.' },
-  { step: '02', title: 'Quick Task', desc: 'A small take-home relevant to the role. Under 2 hours. We want to see how you think.' },
-  { step: '03', title: 'Founder Call', desc: '30-minute call directly with a FindMyShots founder. No HR, no layers.' },
+  { step: '01', title: 'Portfolio + Application', desc: 'Send us your portfolio and a short intro. Show us what you've built, made, or done — work speaks louder than a CV.' },
+  { step: '02', title: 'Pecha Kucha', desc: 'Prepare a Pecha Kucha presentation about yourself — 20 slides, 20 seconds each, 6 minutes 40 seconds total. Tell us who you are, what you've done, and why FindMyShots. This is non-negotiable.' },
+  { step: '03', title: 'Founder Call', desc: 'Present your Pecha Kucha live to a FindMyShots founder. 30 minutes. No HR, no layers — just a real conversation.' },
   { step: '04', title: 'Start', desc: "If it's a yes, you start within the week. No fixed end date — intern as long as you want." },
   { step: '05', title: 'Go Full-Time', desc: "When the time is right and you've shown what you can do, we'll bring you on. The decision is ours, but the door is always open." },
 ]
@@ -116,6 +116,9 @@ export default function CareersPage() {
           <span className="font-medium">Internships are unpaid.</span> What we offer instead: direct mentorship from the founders,
           ownership over a real business function, and a front-row seat to building a startup that's already generating real revenue.
           The full-time offer comes when you've earned it — and we never cut interns loose.
+          <br /><br />
+          <span className="font-medium">All applicants must prepare a Pecha Kucha</span> — 20 slides, 20 seconds each.
+          Tell us who you are, what you've built, and why you want to be part of this. No Pecha Kucha, no interview.
         </p>
       </div>
 

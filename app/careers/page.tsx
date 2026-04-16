@@ -13,11 +13,11 @@ const roles = [
     month: 'Month 1',
     urgent: true,
     salary: '₱35,000 – ₱50,000/month',
-    description: "We're building features that directly drive revenue — starting with our prepay registration integration. You'll work with our CTO and existing dev on a live production system used by thousands of runners every week.",
+    description: "We're building features that directly drive revenue — starting with our prepay registration integration. You'll work with our CTO on a live production system used by thousands of runners every week.",
     stack: 'Next.js 15, NestJS 11, PostgreSQL/Supabase, Firebase, Google App Engine',
     lookingFor: [
       'Has shipped real production features — not just side projects',
-      'Strong in NestJS/Next.js (our stack)',
+      'Strong in NestJS or Next.js (our stack)',
       'Works well async and remotely without hand-holding',
       'Bonus: experience with payment integrations',
     ],
@@ -25,61 +25,61 @@ const roles = [
   },
   {
     icon: Headphones,
-    title: 'Ops / Customer Success',
+    title: 'Ops & Growth Generalist',
     part: 'Value Delivery',
     month: 'Month 1',
     urgent: true,
     salary: '₱20,000 – ₱30,000/month',
-    description: "Nobody clearly owns what happens after a deal is signed. You will. Organizer setup, photographer onboarding, payout queries, event launches — you own the full post-sale experience.",
+    description: "A multi-hat role for someone organized, resourceful, and good with people. You'll own the post-sale experience — organizer setup, photographer onboarding, support, and building the processes that keep everything running. No specific background required.",
     stack: null,
     lookingFor: [
-      'Obsessively organized — loves checklists and systems',
-      'Patient with non-technical customers',
-      'Can spot a broken process and build the SOP to fix it',
-      'Bonus: handled support for a tech product before',
+      'Makes a checklist before anyone else realizes one is needed',
+      'Communicates clearly with non-technical people',
+      'Takes ownership — if something is broken, you fix it',
+      'Any customer-facing, ops, events, or coordination background welcome',
     ],
     email: 'Ops/CS',
   },
   {
     icon: TrendingUp,
-    title: 'BizDev / Sales',
+    title: 'BizDev & Growth Generalist',
     part: 'Sales',
     month: 'Month 2',
     urgent: false,
     salary: '₱25,000 – ₱35,000/month',
-    description: "You'll own the full organizer sales cycle — outbound, demos, closing, and renewals. Right now the CEO closes every deal. Your job is to change that.",
+    description: "A multi-hat role for someone who builds relationships naturally and follows through. You'll own the organizer sales cycle — outbound, demos, closing, account management, renewals. No formal sales background required, just drive and people skills.",
     stack: null,
     lookingFor: [
-      'Has closed B2B deals before (events, SaaS, sponsorships)',
-      "Self-managed — doesn't need a manager on Monday morning",
-      'Comfortable with rejection and knows what to do next',
-      'Bonus: network in the PH running and events scene',
+      'Can talk to strangers and make them feel comfortable quickly',
+      'Self-managed — sets their own agenda without being pushed',
+      'Genuinely curious about the PH running and events space',
+      'Any sales, BizDev, account management, or client-facing experience welcome',
     ],
     email: 'BizDev/Sales',
   },
   {
     icon: Megaphone,
-    title: 'Content / Growth',
+    title: 'Content & Growth Generalist',
     part: 'Marketing',
     month: 'Month 2',
     urgent: false,
     salary: '₱20,000 – ₱30,000/month',
-    description: "Our CMO owns brand strategy — you make it real every day. Social media, email campaigns, event recaps, growth experiments. We need content that actually performs.",
+    description: "A multi-hat role for someone creative, consistent, and results-driven. You'll own content execution across social, email, and campaigns — and help figure out what grows the brand fastest. No formal marketing degree required.",
     stack: null,
     lookingFor: [
-      'Portfolio with real engagement numbers',
-      'Understands PH running and endurance sports culture',
-      'Works across formats: video, copy, graphics briefs',
-      "Bonus: basic Canva skills so you're never blocked",
+      'Has made content that people actually engaged with — show us examples',
+      'Gets the PH running, triathlon, or sports community',
+      'Writes like a real person, not a press release',
+      'Bonus: basic Canva or video editing so you\'re never blocked',
     ],
     email: 'Content/Growth',
   },
 ]
 
 const steps = [
-  { step: '01', title: 'Application', desc: 'Short intro + one specific example of relevant work. No lengthy cover letters.' },
-  { step: '02', title: 'Async Assessment', desc: 'A short take-home task. Under 2 hours. We respect that you have a job.' },
-  { step: '03', title: 'Interview', desc: '45–60 minute video call with the hiring manager.' },
+  { step: '01', title: 'Application', desc: 'Short intro + one specific example of relevant work. No lengthy cover letters — substance over polish.' },
+  { step: '02', title: 'Async Assessment', desc: 'A short take-home task relevant to the role. Under 2 hours. We respect that you have a job.' },
+  { step: '03', title: 'Interview', desc: '45–60 minute video call with the hiring manager. We dig into how you think and whether this is the right fit for both sides.' },
   { step: '04', title: 'CEO Call', desc: 'Short culture and alignment call with Van.' },
   { step: '05', title: 'Offer', desc: "If it's a yes on both sides, offer within 48 hours." },
 ]
@@ -97,14 +97,15 @@ export default function CareersPage() {
         <h1 className="text-3xl font-bold text-white mb-3">Join FindMyShots</h1>
         <p className="text-slate-400 text-base leading-relaxed max-w-2xl">
           We're building the platform that makes every race photo findable and every memory permanent.
-          Small team, high ownership, expanding across Southeast Asia.
+          Small team, high ownership, expanding across Southeast Asia. The people who join now shape what this becomes.
         </p>
       </div>
 
       <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5 mb-10">
         <p className="text-slate-300 text-sm leading-relaxed">
           FindMyShots is <span className="text-white font-medium">remote-first</span>. We don't measure hours — we measure outcomes.
-          If you want to <span className="text-white font-medium">own something real and move fast</span>, keep reading.
+          We hire <span className="text-white font-medium">generalists who own things</span>, not specialists who wait for instructions.
+          If you're hungry, adaptable, and want to build something real — keep reading.
         </p>
       </div>
 
@@ -135,7 +136,7 @@ export default function CareersPage() {
               <p className="text-slate-400 text-sm leading-relaxed mb-4">{role.description}</p>
               {role.stack && <p className="text-xs text-slate-500 mb-4"><span className="text-slate-400 font-medium">Stack: </span>{role.stack}</p>}
               <div className="mb-5">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">Looking for</p>
+                <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">What makes you a fit</p>
                 <ul className="flex flex-col gap-1.5">
                   {role.lookingFor.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-slate-400">
@@ -182,7 +183,7 @@ export default function CareersPage() {
       </div>
 
       <p className="text-center text-xs text-slate-600 mt-8">
-        FindMyShots is remote-first and equal opportunity. We hire on capability and ownership.
+        FindMyShots is remote-first and equal opportunity. We hire on capability and ownership — nothing else.
       </p>
     </div>
   )

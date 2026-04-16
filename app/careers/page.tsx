@@ -78,8 +78,8 @@ const roles = [
 ]
 
 const steps = [
-  { step: '01', title: 'Portfolio + Application', desc: 'Send us your portfolio and a short intro. Show us what you've built, made, or done — work speaks louder than a CV.' },
-  { step: '02', title: 'Pecha Kucha', desc: 'Prepare a Pecha Kucha presentation about yourself — 20 slides, 20 seconds each, 6 minutes 40 seconds total. Tell us who you are, what you've done, and why FindMyShots. This is non-negotiable.' },
+  { step: '01', title: 'Portfolio + Application', desc: "Send us your portfolio and a short intro. Show us what you've built, made, or done — work speaks louder than a CV." },
+  { step: '02', title: 'Pecha Kucha', desc: "Prepare a Pecha Kucha presentation about yourself — 20 slides, 20 seconds each, 6 minutes 40 seconds total. Tell us who you are, what you've done, and why FindMyShots. This is non-negotiable." },
   { step: '03', title: 'Founder Call', desc: 'Present your Pecha Kucha live to a FindMyShots founder. 30 minutes. No HR, no layers — just a real conversation.' },
   { step: '04', title: 'Start', desc: "If it's a yes, you start within the week. No fixed end date — intern as long as you want." },
   { step: '05', title: 'Go Full-Time', desc: "When the time is right and you've shown what you can do, we'll bring you on. The decision is ours, but the door is always open." },

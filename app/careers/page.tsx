@@ -13,7 +13,7 @@ const roles = [
     tag: 'Full-time',
     tagColor: 'violet',
     salary: '₱35,000 – ₱50,000/month',
-    description: "We're building features that directly drive revenue — starting with our prepay registration integration. You'll work with our CTO on a live production system used by thousands of runners every week. This is a full-time specialist role, not an internship.",
+    description: "We're building features that directly drive revenue — starting with our prepay registration integration. You'll work with our CTO on a live production system used by thousands of runners every week. This is a full-time specialist role.",
     stack: 'Next.js 15, NestJS 11, PostgreSQL/Supabase, Firebase, Google App Engine',
     lookingFor: [
       'Has shipped real production features — not just side projects',
@@ -27,10 +27,10 @@ const roles = [
     icon: Headphones,
     title: 'Ops & Growth Intern',
     part: 'Value Delivery',
-    tag: 'Internship → Full-time',
+    tag: 'Internship',
     tagColor: 'green',
-    salary: 'Unpaid · 1 month · Convert-to-hire',
-    description: "You'll own the post-sale experience — organizer setup, photographer onboarding, support, and building processes. Do this well and you become FindMyShots' first full-time Ops hire.",
+    salary: 'Unpaid · Open-ended · Convert-to-hire',
+    description: "You'll own the post-sale experience — organizer setup, photographer onboarding, support, and building processes. Intern as long as you want. When the time is right and you've shown what you can do, we'll bring you on full-time.",
     stack: null,
     lookingFor: [
       'Organized and resourceful — figures things out without a playbook',
@@ -44,10 +44,10 @@ const roles = [
     icon: TrendingUp,
     title: 'BizDev & Sales Intern',
     part: 'Sales',
-    tag: 'Internship → Full-time',
+    tag: 'Internship',
     tagColor: 'green',
-    salary: 'Unpaid · 1 month · Convert-to-hire',
-    description: "You'll own the organizer sales pipeline — outbound, demos, and closing. You're not shadowing someone. You're doing the work from day one. Crush it and you become FindMyShots' first full-time Sales hire.",
+    salary: 'Unpaid · Open-ended · Convert-to-hire',
+    description: "You'll own the organizer sales pipeline — outbound, demos, and closing. You're not shadowing someone. You're doing the work from day one. Intern as long as you want, and when you've proven yourself, the full-time role is yours.",
     stack: null,
     lookingFor: [
       'Can start conversations with strangers and build rapport fast',
@@ -61,10 +61,10 @@ const roles = [
     icon: Megaphone,
     title: 'Content & Growth Intern',
     part: 'Marketing',
-    tag: 'Internship → Full-time',
+    tag: 'Internship',
     tagColor: 'green',
-    salary: 'Unpaid · 1 month · Convert-to-hire',
-    description: "You'll own content execution — social media, email, event recaps, and growth experiments. Not just making things look good. Making things that actually work. Do this well and you become FindMyShots' first full-time Content hire.",
+    salary: 'Unpaid · Open-ended · Convert-to-hire',
+    description: "You'll own content execution — social media, email, event recaps, and growth experiments. Not busy work. Real output that shapes the brand. Intern as long as you want, and when the timing is right, we'll make it official.",
     stack: null,
     lookingFor: [
       'Has made content people actually engaged with — show us',
@@ -77,11 +77,11 @@ const roles = [
 ]
 
 const steps = [
-  { step: '01', title: 'Apply', desc: 'Short intro + one example of relevant work or something you built/did. No cover letters.' },
+  { step: '01', title: 'Apply', desc: 'Short intro + one example of relevant work or something you built. No cover letters.' },
   { step: '02', title: 'Quick Task', desc: 'A small take-home relevant to the role. Under 2 hours. We want to see how you think.' },
   { step: '03', title: 'Founder Call', desc: '30-minute call directly with a FindMyShots founder. No HR, no layers.' },
-  { step: '04', title: 'Start', desc: "If it's a yes, you start within the week. 1-month internship begins." },
-  { step: '05', title: 'Convert', desc: 'At the end of the month, the best performers get offered a full-time role. This is the goal.' },
+  { step: '04', title: 'Start', desc: "If it's a yes, you start within the week. No fixed end date — intern as long as you want." },
+  { step: '05', title: 'Go Full-Time', desc: "When the time is right and you've shown what you can do, we'll bring you on. The decision is ours, but the door is always open." },
 ]
 
 export default function CareersPage() {
@@ -103,15 +103,18 @@ export default function CareersPage() {
 
       <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5 mb-3">
         <p className="text-slate-300 text-sm leading-relaxed">
-          Most of our open roles are <span className="text-white font-medium">internships with a direct path to full-time</span>.
-          We don't do busy work. From day one, you own something real. If you're the kind of person who gets energy from building things from scratch —
-          not waiting for instructions — this is for you.
+          Most of our open roles start as <span className="text-white font-medium">internships with no fixed end date</span>.
+          You intern as long as you want. When the timing is right and you've proven yourself,
+          we'll bring you on full-time. No pressure, no arbitrary deadlines —
+          just <span className="text-white font-medium">real work, real ownership, and a real path forward</span>.
         </p>
       </div>
 
       <div className="bg-amber-900/20 border border-amber-800/40 rounded-xl p-4 mb-10">
         <p className="text-amber-300 text-sm">
-          <span className="font-medium">Internships are unpaid.</span> What we offer instead: direct access to the founders, real ownership over a business function, and a front-row seat to building a startup from the ground up. The best performers get a full-time offer at the end of month one.
+          <span className="font-medium">Internships are unpaid.</span> What we offer instead: direct mentorship from the founders,
+          ownership over a real business function, and a front-row seat to building a startup that's already generating real revenue.
+          The full-time offer comes when you've earned it — and we never cut interns loose.
         </p>
       </div>
 

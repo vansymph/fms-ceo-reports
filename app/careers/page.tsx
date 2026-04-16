@@ -8,12 +8,12 @@ export const metadata = {
 const roles = [
   {
     icon: Code2,
-    title: 'Full-Stack Developer (Specialist)',
+    title: 'Full-Stack Developer',
     part: 'Value Creation',
-    month: 'Month 1',
-    urgent: true,
+    tag: 'Full-time',
+    tagColor: 'violet',
     salary: '₱35,000 – ₱50,000/month',
-    description: "We're building features that directly drive revenue — starting with our prepay registration integration. You'll work with our CTO on a live production system used by thousands of runners every week.",
+    description: "We're building features that directly drive revenue — starting with our prepay registration integration. You'll work with our CTO on a live production system used by thousands of runners every week. This is a full-time specialist role, not an internship.",
     stack: 'Next.js 15, NestJS 11, PostgreSQL/Supabase, Firebase, Google App Engine',
     lookingFor: [
       'Has shipped real production features — not just side projects',
@@ -25,63 +25,63 @@ const roles = [
   },
   {
     icon: Headphones,
-    title: 'Ops & Growth Generalist',
+    title: 'Ops & Growth Intern',
     part: 'Value Delivery',
-    month: 'Month 1',
-    urgent: true,
-    salary: '₱20,000 – ₱30,000/month',
-    description: "A multi-hat role for someone organized, resourceful, and good with people. You'll own the post-sale experience — organizer setup, photographer onboarding, support, and building the processes that keep everything running. No specific background required.",
+    tag: 'Internship → Full-time',
+    tagColor: 'green',
+    salary: 'Unpaid · 1 month · Convert-to-hire',
+    description: "You'll own the post-sale experience — organizer setup, photographer onboarding, support, and building processes. Do this well and you become FindMyShots' first full-time Ops hire.",
     stack: null,
     lookingFor: [
-      'Makes a checklist before anyone else realizes one is needed',
-      'Communicates clearly with non-technical people',
-      'Takes ownership — if something is broken, you fix it',
-      'Any customer-facing, ops, events, or coordination background welcome',
+      'Organized and resourceful — figures things out without a playbook',
+      'Good with people, especially non-technical ones',
+      'Takes ownership without being told to',
+      'Any background welcome — we care about mindset, not your CV',
     ],
-    email: 'Ops/CS',
+    email: 'Ops Intern',
   },
   {
     icon: TrendingUp,
-    title: 'BizDev & Growth Generalist',
+    title: 'BizDev & Sales Intern',
     part: 'Sales',
-    month: 'Month 2',
-    urgent: false,
-    salary: '₱25,000 – ₱35,000/month',
-    description: "A multi-hat role for someone who builds relationships naturally and follows through. You'll own the organizer sales cycle — outbound, demos, closing, account management, renewals. No formal sales background required, just drive and people skills.",
+    tag: 'Internship → Full-time',
+    tagColor: 'green',
+    salary: 'Unpaid · 1 month · Convert-to-hire',
+    description: "You'll own the organizer sales pipeline — outbound, demos, and closing. You're not shadowing someone. You're doing the work from day one. Crush it and you become FindMyShots' first full-time Sales hire.",
     stack: null,
     lookingFor: [
-      'Can talk to strangers and make them feel comfortable quickly',
-      'Self-managed — sets their own agenda without being pushed',
-      'Genuinely curious about the PH running and events space',
-      'Any sales, BizDev, account management, or client-facing experience welcome',
+      'Can start conversations with strangers and build rapport fast',
+      'Self-driven — sets their own agenda without being pushed',
+      'Genuinely interested in PH running, sports, or events',
+      'Any background welcome — hustle matters more than experience',
     ],
-    email: 'BizDev/Sales',
+    email: 'BizDev Intern',
   },
   {
     icon: Megaphone,
-    title: 'Content & Growth Generalist',
+    title: 'Content & Growth Intern',
     part: 'Marketing',
-    month: 'Month 2',
-    urgent: false,
-    salary: '₱20,000 – ₱30,000/month',
-    description: "A multi-hat role for someone creative, consistent, and results-driven. You'll own content execution across social, email, and campaigns — and help figure out what grows the brand fastest. No formal marketing degree required.",
+    tag: 'Internship → Full-time',
+    tagColor: 'green',
+    salary: 'Unpaid · 1 month · Convert-to-hire',
+    description: "You'll own content execution — social media, email, event recaps, and growth experiments. Not just making things look good. Making things that actually work. Do this well and you become FindMyShots' first full-time Content hire.",
     stack: null,
     lookingFor: [
-      'Has made content that people actually engaged with — show us examples',
-      'Gets the PH running, triathlon, or sports community',
-      'Writes like a real person, not a press release',
-      'Bonus: basic Canva or video editing so you\'re never blocked',
+      'Has made content people actually engaged with — show us',
+      'Understands PH running, triathlon, or sports culture',
+      'Writes like a human, not a press release',
+      'Any background welcome — show us your work, not your degree',
     ],
-    email: 'Content/Growth',
+    email: 'Content Intern',
   },
 ]
 
 const steps = [
-  { step: '01', title: 'Application', desc: 'Short intro + one specific example of relevant work. No lengthy cover letters — substance over polish.' },
-  { step: '02', title: 'Async Assessment', desc: 'A short take-home task relevant to the role. Under 2 hours. We respect that you have a job.' },
-  { step: '03', title: 'Interview', desc: '45–60 minute video call with the hiring manager. We dig into how you think and whether this is the right fit for both sides.' },
-  { step: '04', title: 'CEO Call', desc: 'Short culture and alignment call with Van.' },
-  { step: '05', title: 'Offer', desc: "If it's a yes on both sides, offer within 48 hours." },
+  { step: '01', title: 'Apply', desc: 'Short intro + one example of relevant work or something you built/did. No cover letters.' },
+  { step: '02', title: 'Quick Task', desc: 'A small take-home relevant to the role. Under 2 hours. We want to see how you think.' },
+  { step: '03', title: 'Founder Call', desc: '30-minute call directly with a FindMyShots founder. No HR, no layers.' },
+  { step: '04', title: 'Start', desc: "If it's a yes, you start within the week. 1-month internship begins." },
+  { step: '05', title: 'Convert', desc: 'At the end of the month, the best performers get offered a full-time role. This is the goal.' },
 ]
 
 export default function CareersPage() {
@@ -96,16 +96,22 @@ export default function CareersPage() {
         </div>
         <h1 className="text-3xl font-bold text-white mb-3">Join FindMyShots</h1>
         <p className="text-slate-400 text-base leading-relaxed max-w-2xl">
-          We're building the platform that makes every race photo findable and every memory permanent.
-          Small team, high ownership, expanding across Southeast Asia. The people who join now shape what this becomes.
+          We're a photo commerce platform for running events, expanding across Southeast Asia.
+          Small team, real traction, high ownership. The people who join now help build what this becomes.
         </p>
       </div>
 
-      <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5 mb-10">
+      <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5 mb-3">
         <p className="text-slate-300 text-sm leading-relaxed">
-          FindMyShots is <span className="text-white font-medium">remote-first</span>. We don't measure hours — we measure outcomes.
-          We hire <span className="text-white font-medium">generalists who own things</span>, not specialists who wait for instructions.
-          If you're hungry, adaptable, and want to build something real — keep reading.
+          Most of our open roles are <span className="text-white font-medium">internships with a direct path to full-time</span>.
+          We don't do busy work. From day one, you own something real. If you're the kind of person who gets energy from building things from scratch —
+          not waiting for instructions — this is for you.
+        </p>
+      </div>
+
+      <div className="bg-amber-900/20 border border-amber-800/40 rounded-xl p-4 mb-10">
+        <p className="text-amber-300 text-sm">
+          <span className="font-medium">Internships are unpaid.</span> What we offer instead: direct access to the founders, real ownership over a business function, and a front-row seat to building a startup from the ground up. The best performers get a full-time offer at the end of month one.
         </p>
       </div>
 
@@ -113,6 +119,9 @@ export default function CareersPage() {
       <div className="flex flex-col gap-5 mb-12">
         {roles.map((role) => {
           const Icon = role.icon
+          const tagBg = role.tagColor === 'green'
+            ? 'bg-green-900/40 text-green-400 border-green-800/50'
+            : 'bg-violet-900/40 text-violet-300 border-violet-800/50'
           return (
             <div key={role.title} className="bg-slate-800 border border-slate-700 rounded-xl p-6">
               <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
@@ -122,15 +131,12 @@ export default function CareersPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">{role.title}</h3>
-                    <p className="text-xs text-slate-500">{role.part} · Remote PH · Full-time</p>
+                    <p className="text-xs text-slate-500">{role.part} · Remote PH</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 flex-wrap">
-                  {role.urgent && (
-                    <span className="text-xs bg-red-900/40 text-red-400 border border-red-800/50 px-2 py-0.5 rounded-full">Hiring Now</span>
-                  )}
-                  <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded-full">{role.month}</span>
-                  <span className="text-xs bg-violet-900/40 text-violet-300 border border-violet-800/50 px-2 py-0.5 rounded-full">{role.salary}</span>
+                  <span className={`text-xs border px-2 py-0.5 rounded-full ${tagBg}`}>{role.tag}</span>
+                  <span className="text-xs bg-slate-700 text-slate-400 px-2 py-0.5 rounded-full">{role.salary}</span>
                 </div>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">{role.description}</p>
@@ -183,7 +189,7 @@ export default function CareersPage() {
       </div>
 
       <p className="text-center text-xs text-slate-600 mt-8">
-        FindMyShots is remote-first and equal opportunity. We hire on capability and ownership — nothing else.
+        FindMyShots is remote-first and equal opportunity. We hire on capability and ownership.
       </p>
     </div>
   )

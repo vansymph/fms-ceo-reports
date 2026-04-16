@@ -19,7 +19,7 @@ const roles = [
       'Sharp developer with strong fundamentals — side projects, open source, or production work all count',
       'Uses agentic AI coding tools (Cursor, Copilot, Claude Code, etc.) to move fast',
       'Thinks like an entrepreneur — cares about impact, not just clean code',
-      'Picks up new stacks quickly and doesn't wait to be unblocked',
+      'Picks up new stacks quickly and doesn\'t wait to be unblocked',
       'Works well async, remotely, and with minimal hand-holding',
     ],
     email: 'Specialist Dev',

@@ -16,6 +16,7 @@ import {
   Menu,
   X,
   BarChart2,
+  Users,
 } from 'lucide-react'
 import type { CategorySummary } from '@/lib/reports'
 
@@ -76,12 +77,27 @@ export default function Sidebar({ categories }: SidebarProps) {
           </Link>
         )
       })}
+
+      <div className="my-2 border-t border-slate-800" />
+
+      <Link
+        href="/careers"
+        onClick={() => setOpen(false)}
+        className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-colors ${
+          activeCategory === 'careers'
+            ? 'bg-violet-600 text-white'
+            : 'text-slate-400 hover:text-white hover:bg-slate-800'
+        }`}
+      >
+        <Users className="w-4 h-4 flex-shrink-0" />
+        <span className="flex-1 truncate">Careers</span>
+        <span className="text-xs bg-red-900/40 text-red-400 border border-red-800/50 px-1.5 py-0.5 rounded-full">4 open</span>
+      </Link>
     </nav>
   )
 
   return (
     <>
-      {/* Mobile toggle */}
       <button
         className="md:hidden fixed top-4 left-4 z-50 p-2 bg-slate-800 rounded-lg text-slate-300 hover:text-white"
         onClick={() => setOpen(!open)}
@@ -90,7 +106,6 @@ export default function Sidebar({ categories }: SidebarProps) {
         {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
       </button>
 
-      {/* Mobile overlay */}
       {open && (
         <div
           className="md:hidden fixed inset-0 z-40 bg-black/50"
@@ -98,7 +113,6 @@ export default function Sidebar({ categories }: SidebarProps) {
         />
       )}
 
-      {/* Sidebar */}
       <aside
         className={`fixed md:sticky top-0 left-0 z-40 h-screen w-64 bg-slate-950 border-r border-slate-800 flex flex-col transition-transform duration-200 ${
           open ? 'translate-x-0' : '-translate-x-full md:translate-x-0'

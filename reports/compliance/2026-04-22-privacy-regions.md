@@ -1,20 +1,24 @@
 # FMS Privacy Compliance Tracker
-_Last Updated: April 22, 2026_
-_Add new regions as FMS expands. Check off when fully compliant. Details in linked ClickUp tasks._
+
+> Add new regions as FMS expands. Check off when fully compliant. All task details in linked ClickUp.
 
 ---
 
-## Active Regions
+## ✅ Active Regions
 
-- [ ] Philippines: https://app.clickup.com/t/86d2qw8fv
-- [ ] Singapore: https://app.clickup.com/t/86d2qw8hg
-- [ ] Illinois, USA (Chicago): https://app.clickup.com/t/86d2qrj8n
+| Region | Status | ClickUp Task |
+|--------|--------|-------------|
+| 🇵🇭 Philippines | 🟡 In Progress | [View Task](https://app.clickup.com/t/86d2qw8fv) |
+| 🇸🇬 Singapore | 🟡 In Progress | [View Task](https://app.clickup.com/t/86d2qw8hg) |
+| 🇺🇸 Illinois, USA (Chicago) | 🔴 Blocks Launch | [View Task](https://app.clickup.com/t/86d2qrj8n) |
 
 ---
 
-## On Radar (not yet active)
+## 🔭 On Radar (not yet active)
 
-- [ ] Malaysia _(Spartan SEA — KL events)_
-- [ ] Indonesia _(Spartan ID / future expansion)_
-- [ ] California, USA _(CCPA — any US event with CA residents)_
-- [ ] Australia _(future marathon expansion)_
+| Region | Trigger |
+|--------|---------|
+| 🇲🇾 Malaysia | Spartan SEA — KL events |
+| 🇮🇩 Indonesia | Spartan ID / future expansion |
+| 🇺🇸 California, USA | CCPA — any US event with CA residents |
+| 🇦🇺 Australia | Future marathon expansion |

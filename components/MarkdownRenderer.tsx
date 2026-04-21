@@ -18,7 +18,13 @@ export default function MarkdownRenderer({ content }: { content: string }) {
       prose-blockquote:border-violet-500 prose-blockquote:text-slate-400
       prose-li:text-slate-300
       prose-hr:border-slate-700
-      prose-table:text-slate-300 prose-th:text-white prose-th:border-slate-600 prose-td:border-slate-700">
+      prose-table:text-slate-300 prose-th:text-white prose-th:border-slate-600 prose-td:border-slate-700
+      prose-thead:bg-slate-900
+      [&_table]:border-collapse [&_table]:w-full [&_table]:rounded-lg [&_table]:overflow-hidden
+      [&_th]:px-4 [&_th]:py-3 [&_th]:text-left [&_th]:text-sm [&_th]:font-semibold [&_th]:bg-slate-900 [&_th]:border [&_th]:border-slate-700
+      [&_td]:px-4 [&_td]:py-3 [&_td]:text-sm [&_td]:border [&_td]:border-slate-700
+      [&_tr:hover]:bg-slate-700/30
+      prose-blockquote:bg-slate-900/50 prose-blockquote:rounded-lg prose-blockquote:px-4 prose-blockquote:py-1 prose-blockquote:not-italic">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeHighlight, rehypeSlug]}

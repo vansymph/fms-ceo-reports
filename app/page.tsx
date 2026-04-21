@@ -11,6 +11,7 @@ import {
   ListTodo,
   BarChart2,
   ArrowRight,
+  ShieldCheck,
 } from 'lucide-react'
 import { getAllCategories, formatCategoryLabel } from '@/lib/reports'
 
@@ -24,6 +25,7 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   'paw-upgrades': Zap,
   'market-discovery': Globe,
   todos: ListTodo,
+  compliance: ShieldCheck,
 }
 
 export const revalidate = 0

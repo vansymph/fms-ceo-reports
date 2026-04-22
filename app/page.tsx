@@ -24,6 +24,7 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   'week-review': Calendar,
   'paw-upgrades': Zap,
   'market-discovery': Globe,
+  'leads': Target,
   todos: ListTodo,
   compliance: ShieldCheck,
 }
